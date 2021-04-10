@@ -46,7 +46,11 @@ do {
     
 } while (confirm('Do you want to play again?'));
 
+var h = document.createElement('h2');
+var t = document.createTextNode(`your final results are:\nWins: ${results.win}\nLoses: ${results.loose}\nTies: ${results.tied}`);
+h.appendChild(t);
 
+document.body.appendChild(h);
 
 
 
